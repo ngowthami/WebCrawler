@@ -1,0 +1,23 @@
+body {
+    height: 100%;
+    margin: 100;
+  }
+  body {
+    background: #913D88;
+    font: 15px monospace;
+    color: #FFFFFF;
+  }
+  p {
+    margin-top: 30px;
+  }
+
+  .topcorner {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 88px;
+  }
+
+.toprightcorner .button1 {
+  border: 2px solid #4CAF50; /* Green */
+}

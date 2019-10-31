@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<!-- <head>
+  <meta charset="UTF-8">
+  <title>CSS Search Field Animation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head> -->
+
+<head>
+		<meta charset="UTF-8">
+		<title>Links</title>
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,700" rel="stylesheet">
+		<script src="https://use.fontawesome.com/20df5cf3d4.js"></script>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="{{ url_for('static',filename='styles/styleerr.css') }}">
+	  
+</head>
+<body>	
+		<br><br>
+		<form class = "toprightcorner" action="/">
+         	<button class = "button1" type="submit">Go back to Home</button>
+      	</form>
+        <!-- <div class="toprightcorner"><a href="/">Home</a></div> -->
+        <br><br>
+        <section class="entry-content">
+            {% for link in links %}
+                <ul>
+                    <li>{{ link }}</li>
+                </br>
+                </ul>
+            {% endfor %}
+            </section>
+         
+</body>
+
+</html>

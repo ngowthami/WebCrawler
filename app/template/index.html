@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<!-- <head>
+  <meta charset="UTF-8">
+  <title>CSS Search Field Animation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head> -->
+
+<head>
+		<meta charset="UTF-8">
+		<title>Web Crawler</title>
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+		<script src="https://use.fontawesome.com/20df5cf3d4.js"></script>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+		<!-- <script type="text/javascript"
+		src="{{ url_for('static', filename='script.js') }}"></script> -->
+	  
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="cntr">
+	<form action="/search" class="form" method="POST">
+ 	<h1 style="font-family: 'Mansalva', cursive; font-size: 50px">Crawler</h1> 
+ 	<div class="cntr-innr">
+	  	<label class="search" for="inpt_search">
+		<input id="inpt_search" type="text" name = "address" value = "https://www.google.com"/><br>
+		</label><br>
+		<!-- <p>Hover to place the url.</p> -->
+		<div class="custom01">
+				<br><br>
+				<input type="radio" id="radio01-01" name="category" value = "emails"/><label for="radio01-01">emails</label>
+				<input type="radio" id="radio01-02" name="category" value = "links" checked="checked"/><label for="radio01-02">links</label>
+				<input type="radio" id="radio01-03" name="category" value="images"/><label for="radio01-03">images</label>
+				<input type="radio" id="radio01-04" name="category" value="videos"/><label for="radio01-04">videos</label>
+				<input type="radio" id="radio01-04" name="category" value="pdf"/><label for="radio01-04">pdf</label>
+
+		</div>
+		<input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;" tabindex="-1" />
+		
+	</div>
+	</form>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
